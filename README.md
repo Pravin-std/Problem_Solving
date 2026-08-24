@@ -1,4 +1,4 @@
-Problem Statement
+1. Problem Statement
 
 John wrote a sequence of words in CamelCase as a string s, having the following properties:
 
