@@ -114,3 +114,76 @@ Output
 5 5 5 5 5 5
 
 3. best time to buy and sell stocks
+
+4. Most Frequent Product Code
+easy
+12
+63.0%
+arrays
+counting
+hash table
+implementation
+Problem Statement:
+
+An online store records the product code of every item sold during a flash sale. The codes are stored in an integer array.
+
+The manager wants to identify the product code that occurred the maximum number of times.
+
+If two or more product codes have the same maximum frequency, print the product code whose first occurrence appears earlier in the array.
+
+Input Format:
+
+The first line contains an integer N, the number of sold items.
+The second line contains N space-separated product codes.
+Output Format:
+
+Print two space-separated values:
+
+The selected product code.
+Its frequency.
+Constraints:
+
+1 ≤ N ≤ 500
+-106 ≤ arr[i] ≤ 106
+Sample Input 1:
+
+9
+41 12 41 7 12 41 7 12 7
+Sample Output 1:
+
+41 3
+Explanation:
+
+41, 12 and 7 each occur 3 times. Since 41 appears first in the array before the other tied values, 41 is selected.
+
+Sample Input 2:
+
+8
+5 9 5 2 9 9 5 9
+Sample Output 2:
+
+9 4
+Example 1:
+Input
+⧉
+9
+41 12 41 7 12 41 7 12 7
+Output
+⧉
+41 3
+Example 2:
+Input
+⧉
+8
+5 9 5 2 9 9 5 9
+Output
+⧉
+9 4
+Example 3:
+Input
+⧉
+6
+1 2 3 4 5 6
+Output
+⧉
+1 1
