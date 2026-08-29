@@ -187,3 +187,82 @@ Input
 Output
 ⧉
 1 1
+
+
+5. Circular Display Search
+easy
+10
+27.0%
+arrays
+binary search
+implementation
+Problem Statement:
+
+A railway station displays N distinct train numbers in ascending order. During a system restart, the display list is circularly shifted, so a portion from the beginning may move to the end.
+
+You are given the currently displayed array and a train number K.
+
+First determine whether the given array is a sorted and rotated array. A completely sorted array with no rotation is not considered sorted and rotated.
+
+If the array is sorted and rotated, print the index of K in the current array. If K is absent, print -1.
+
+If the array is not sorted and rotated, print Invalid.
+
+Input Format:
+
+The first line contains an integer N.
+The second line contains N distinct space-separated integers.
+The third line contains the train number K to search.
+Output Format:
+
+Print the index of K if the array is sorted and rotated and K is present.
+Print -1 if the array is sorted and rotated but K is absent.
+Print Invalid if the array is not sorted and rotated.
+Constraints:
+
+2 ≤ N ≤ 1000
+-109 ≤ arr[i], K ≤ 109
+All array elements are distinct.
+Sample Input 1:
+
+7
+40 50 60 70 10 20 30
+20
+Sample Output 1:
+
+5
+Sample Input 2:
+
+6
+10 20 30 40 50 60
+40
+Sample Output 2:
+
+Invalid
+Example 1:
+Input
+⧉
+7
+40 50 60 70 10 20 30
+20
+Output
+⧉
+5
+Example 2:
+Input
+⧉
+6
+10 20 30 40 50 60
+40
+Output
+⧉
+Invalid
+Example 3:
+Input
+⧉
+5
+4 5 1 2 3
+4
+Output
+⧉
+0
