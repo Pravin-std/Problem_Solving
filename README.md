@@ -312,3 +312,109 @@ Constraints:
 
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
+
+
+7. You are given an integer array nums of length n and an integer k.
+
+For each index i, calculate its instability score:
+
+instability score =
+maximum value from nums[0] to nums[i]
+-
+minimum value from nums[i] to nums[n-1]
+
+An index i is called stable if:
+
+instability score <= k
+
+Return the smallest (first) stable index.
+
+If there is no stable index, return -1.
+
+Example 1
+Input:
+nums = [5, 0, 1, 4]
+k = 3
+
+Output:
+3
+
+Explanation:
+
+Index 0:
+max [5] = 5
+min [5,0,1,4] = 0
+score = 5 - 0 = 5
+5 > 3 → Not stable
+
+Index 1:
+max [5,0] = 5
+min [0,1,4] = 0
+score = 5 - 0 = 5
+5 > 3 → Not stable
+
+Index 2:
+max [5,0,1] = 5
+min [1,4] = 1
+score = 5 - 1 = 4
+4 > 3 → Not stable
+
+Index 3:
+max [5,0,1,4] = 5
+min [4] = 4
+score = 5 - 4 = 1
+1 <= 3 → Stable ✅
+
+Answer = 3
+Example 2
+Input:
+nums = [3, 2, 1]
+k = 1
+
+Output:
+-1
+
+All indices have:
+
+maximum = 3
+minimum = 1
+
+score = 3 - 1 = 2
+
+Since:
+
+2 > 1
+
+No index is stable.
+
+Answer = -1
+Example 3
+Input:
+nums = [0]
+k = 0
+
+Output:
+0
+
+At index 0:
+
+max [0] = 0
+min [0] = 0
+
+score = 0 - 0 = 0
+
+Since:
+
+0 <= 0
+
+Index 0 is stable.
+
+Answer = 0
+What you need to remember
+For every index i:
+
+1. Find MAX from 0 → i
+2. Find MIN from i → n-1
+3. Calculate MAX - MIN
+4. If result <= k → return i
+5. If nothing works → return -1
