@@ -418,3 +418,67 @@ For every index i:
 3. Calculate MAX - MIN
 4. If result <= k → return i
 5. If nothing works → return -1
+
+
+8. Find Most Frequent Vowel
+easy
+9
+59.0%
+counting
+hash table
+strings
+Accenture
+Problem Statement:
+
+You are given a lowercase string S.
+
+Your task is to determine the vowel that occurs most frequently in the string.
+
+The vowels are:
+
+a, e, i, o, u
+Count the occurrences of each vowel and print the vowel having the highest frequency.
+
+Important Note:
+
+The string will always contain at least one vowel.
+There will always be exactly one vowel with the highest frequency. Therefore, tie handling is not required.
+The string contains only lowercase English letters.
+Input Format:
+
+The first line contains an integer N, representing the length of the string.
+The second line contains the lowercase string S.
+Output Format:
+
+Print a single lowercase character representing the most frequently occurring vowel in the string.
+
+Constraints:
+
+1 ≤ N ≤ 105 Length of S = N S contains only lowercase English letters S contains at least one vowel
+Sample Input:
+
+11 abeaicaidao
+Sample Output:
+
+a
+Explanation:
+
+The frequencies of the vowels in the string abeaicaidao are:
+
+Vowel	Frequency
+a	4
+e	1
+i	2
+o	1
+u	0
+The vowel a appears 4 times, which is more frequent than every other vowel.
+
+Therefore, the output is a.
+
+Example 1:
+Input
+⧉
+abeaicaidao
+Output
+⧉
+a
